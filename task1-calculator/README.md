@@ -14,6 +14,7 @@ The application features a responsive design, ensuring it works seamlessly on bo
 
 ## Project Structure
 
+```
 
 task1-calculator/
 │
@@ -21,6 +22,8 @@ task1-calculator/
 ├── style.css 
 ├── script.js 
 ├── README.md
+
+```
 
 
 ## Features
@@ -33,5 +36,7 @@ task1-calculator/
 
 1. Clone the repository:
 
-   ```bash
+   ```
    git clone https://github.com/rushikesh-auti/OIBSIP.git
+
+   ```
