@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: black;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.play-btn {
+  margin-top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.quote {
+  display: flex;
+  background: #ddd;
+  color: black;
+  align-items: center;
+  padding: 50px;
+}
+
+.quote-text {
+  flex: 1;
+  font-size: 20px;
+}
+
+.quote-img img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.bio {
+  padding: 50px;
+  text-align: center;
+}
+
+.bio h2 {
+  font-size: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
