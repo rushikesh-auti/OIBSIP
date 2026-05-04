@@ -1,0 +1,54 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.form {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+}
+
+.tasks {
+  flex: 1;
+}
+
+.task {
+  background: white;
+  color: black;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.task button {
+  margin-left: 10px;
+}
