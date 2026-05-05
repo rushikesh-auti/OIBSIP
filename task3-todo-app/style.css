@@ -1,54 +1,130 @@
-body {
-  font-family: Arial;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: white;
+* {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  color: white;
 }
 
 h1 {
   text-align: center;
+  background: #eaeaea;
+  color: black;
+  padding: 15px;
+  font-weight: 500;
 }
 
 .container {
   display: flex;
-  gap: 30px;
+  gap: 40px;
+  padding: 40px;
 }
 
 .form {
   background: white;
   color: black;
+  width: 320px;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-input, textarea {
+.form input,
+.form textarea {
   width: 100%;
-  margin: 10px 0;
   padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-button {
+.form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form button {
   width: 100%;
-  padding: 10px;
-  background: green;
+  padding: 12px;
+  background: #28a745;
   color: white;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #218838;
 }
 
 .tasks {
   flex: 1;
 }
 
-.task {
-  background: white;
-  color: black;
+.task-header {
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
-  margin: 10px 0;
-  border-radius: 10px;
+  font-weight: bold;
 }
 
-.task button {
-  margin-left: 10px;
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaeaea;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.task-content {
+  display: flex;
+  gap: 40px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.complete-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.complete-btn:hover {
+  background: #218838;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 100%;
+  }
 }
