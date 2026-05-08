@@ -12,6 +12,8 @@ function register() {
   localStorage.setItem("password", password);
 
   alert("Registration Successful");
+  document.getElementById("regUsername").value = "";
+  document.getElementById("regPassword").value = "";
 }
 
 function login() {
@@ -39,5 +41,19 @@ function login() {
 
     message.style.color = "red";
     message.innerText = "Invalid Username or Password";
+  }
+}
+
+function togglePassword() {
+
+  const regPassword = document.getElementById("regPassword");
+  const loginPassword = document.getElementById("loginPassword");
+
+  if (regPassword.type === "password") {
+    regPassword.type = "text";
+    loginPassword.type = "text";
+  } else {
+    regPassword.type = "password";
+    loginPassword.type = "password";
   }
 }

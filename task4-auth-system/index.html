@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Authentication</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <h2>Register</h2>
+    <h1>Authentication System</h1>
+    <div class="form-section">
+      <h2>Register</h2>
+      <input type="text" id="regUsername" placeholder="Enter Username">
+      <input type="password" id="regPassword" placeholder="Enter Password">
 
-  <input type="text" id="regUsername" placeholder="Username">
-  <input type="password" id="regPassword" placeholder="Password">
+      <div class="show-password">
+        <input type="checkbox" onclick="togglePassword()">
+        <label>Show Password</label>
+      </div>
 
-  <button onclick="register()">Register</button>
+      <button onclick="register()">Register</button>
 
-  <hr>
+    </div>
 
-  <h2>Login</h2>
+    <hr>
 
-  <input type="text" id="loginUsername" placeholder="Username">
-  <input type="password" id="loginPassword" placeholder="Password">
+    <div class="form-section">
+      <h2>Login</h2>
+      <input type="text" id="loginUsername" placeholder="Enter Username">
+      <input type="password" id="loginPassword" placeholder="Enter Password">
+      <button onclick="login()">Login</button>
+      <p id="message"></p>
 
-  <button onclick="login()">Login</button>
+    </div>
 
-  <p id="message"></p>
+  </div>
+  <script src="script.js"></script>
 
-</div>
-
-<script src="script.js"></script>
 </body>
+
 </html>
