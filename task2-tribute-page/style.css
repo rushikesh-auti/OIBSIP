@@ -1,4 +1,3 @@
-/* RESET */
 body {
   margin: 0;
   font-family: "Georgia", serif;
@@ -6,7 +5,6 @@ body {
   color: white;
 }
 
-/* HERO */
 .hero {
   text-align: center;
   padding: 120px 20px;
@@ -43,7 +41,6 @@ body {
   color: black;
 }
 
-/* QUOTE SECTION */
 .quote {
   display: flex;
   justify-content: space-between;
@@ -64,7 +61,6 @@ body {
   filter: grayscale(100%);
 }
 
-/* BIOGRAPHY */
 .bio {
   text-align: center;
   padding: 80px 20px;
@@ -83,7 +79,6 @@ body {
   font-size: 15px;
 }
 
-/* LINE */
 .line {
   margin: 40px auto;
   width: 200px;
@@ -91,7 +86,6 @@ body {
   background: #555;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
